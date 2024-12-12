@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Offres Mobiles 5G</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nos Offres Mobiles</h1>
+        <nav>
+            <%- include("navbar") -%>
+        </nav>
+    </header>
+
+    <div class="offres">
+        <% resulat.forEach(offer => { %>
+            <div class="offer">
+                <h2><%= offer.nom %></h2>
+                <p><%= offer.description %></p>
+                <div class="prix"><%= offer.price %>€/mois</div>
+                <button onclick="choisirOffre('<%= offer.id %>')">Choisir cette offre</button> <!-- Un bouton pour appeler la fonction choisirOffre() -->
+            </div>
+        <% }); %>
+    </div>
+
+    <script>
+        // Définition de la fonction choisirOffre
+        function choisirOffre(id) {
+            // Redirige vers la page de connexion 
+            window.location.href = "/seconnecter"; 
+        }
+    </script>
+
+    <%- include("footer") -%>
+</body>
+</html>

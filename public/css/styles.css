@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c62fcb;
+}
+
+header {
+  background: linear-gradient(90deg, rgb(25, 193, 227),rgb(145, 26, 193));
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background: #200e2c;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #007bff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea, form button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+.social-media a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.offer {
+  background-color: rgb(175, 153, 153);
+  border: 1px solid #f3d9d9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.offer h3 {
+  margin: 10px 0;
+  color: #7ceb14;
+}
+
+.offer p {
+  margin: 5px 0;
+}
+
+.offer .price {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #333;
+}
+
+.offer button {
+  background-color: #99f313;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.offer button:hover {
+  background-color: #dbf515;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: linear-gradient(90deg, rgb(25, 193, 227),rgb(145, 26, 193));
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

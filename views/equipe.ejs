@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Équipe Commerciale</title>
+</head>
+<body>
+    <header>
+        <h1>Gestion d'Offres Mobiles 5G</h1>
+        <nav>
+            <%- include("navbar") -%>
+        </nav>
+    </header>
+
+    <main>
+        <section id="equipe">
+            <h2>Équipe Commerciale</h2>
+            <ul>
+                <% teamMembers.forEach(member => { %>
+                    <li><%= member.nom %> - <%= member.fonction %> - Téléphone: <%= member.telephone %></li>
+                <% }); %>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez l'Équipe</h2>
+            <form action="/equipe" method="POST">
+                <input type="text" name="client_name" placeholder="Nom Prénom" required>
+                <input type="text" name="objet_du_message" placeholder="Objet du message" required>
+                <textarea name="message" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+</body>
+<%- include("footer") -%>
+</html>
